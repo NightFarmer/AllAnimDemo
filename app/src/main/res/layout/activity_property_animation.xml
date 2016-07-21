@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.nightfarmer.allanimdemo.PropertyAnimationActivity">
+
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click1"
+        android:text="TranslateAnimation" />
+
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click2"
+        android:text="ScaleAnimation" />
+
+    <Button
+        android:id="@+id/bt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click3"
+        android:text="RotationAnimation" />
+
+    <Button
+        android:id="@+id/bt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click4"
+        android:text="AlphaAnimation" />
+
+    <Button
+        android:id="@+id/bt_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click5"
+        android:text="动画期间点击监听区域也随之改变" />
+
+
+    <Button
+        android:id="@+id/bt_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click6"
+        android:text="ValueAnimator" />
+
+
+    <Button
+        android:id="@+id/bt_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click7"
+        android:text="AnimatorSet" />
+
+
+    <Button
+        android:id="@+id/bt_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click8"
+        android:text="PropertyValuesHolder" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟布局" />
+
+</LinearLayout>
