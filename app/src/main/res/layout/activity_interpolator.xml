@@ -3,93 +3,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="horizontal"
     tools:context="com.nightfarmer.allanimdemo.InterpolatorActivity">
 
     <LinearLayout
-        android:layout_weight="2"
         android:layout_width="0dp"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/bt_1"
-            android:text="BounceInterpolator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="BounceInterpolator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/bt_2"
-            android:text="AnticipateInterpolator"
-            android:onClick="AnticipateInterpolator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/bt_3"
-            android:text="AccelerateDecelerateInterpolator"
-            android:onClick="AccelerateDecelerateInterpolator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="BounceInterpolator(弹弹弹)" />
+
         <Button
             android:id="@+id/bt_4"
-            android:text="AccelerateInterpolator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="AccelerateInterpolator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/bt_5"
-            android:text="AnticipateOvershootInterpolator"
-            android:onClick="AnticipateOvershootInterpolator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="AccelerateInterpolator(加速)" />
+
         <Button
             android:id="@+id/bt_6"
-            android:text="DecelerateInterpolator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="DecelerateInterpolator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="DecelerateInterpolator(减速)" />
+
         <Button
-            android:id="@+id/bt_7"
-            android:text="LinearInterpolator"
-            android:onClick="LinearInterpolator"
+            android:id="@+id/bt_3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="AccelerateDecelerateInterpolator"
+            android:text="AccelerateDecelerateInterpolator(加速+减速)" />
+
+        <Button
+            android:id="@+id/bt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="AnticipateInterpolator"
+            android:text="AnticipateInterpolator(预跑)" />
+
         <Button
             android:id="@+id/bt_8"
-            android:text="OvershootInterpolator"
-            android:onClick="OvershootInterpolator"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="OvershootInterpolator"
+            android:text="OvershootInterpolator(超过)" />
+
+        <Button
+            android:id="@+id/bt_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="AnticipateOvershootInterpolator"
+            android:text="AnticipateOvershootInterpolator(预跑+超过)" />
+
+        <Button
+            android:id="@+id/bt_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="LinearInterpolator"
+            android:text="LinearInterpolator(线性)" />
+
+
         <Button
             android:id="@+id/bt_9"
-            android:text="CycleInterpolator"
-            android:onClick="CycleInterpolator"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="CycleInterpolator"
+            android:text="CycleInterpolator(圆周)" />
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
         <ImageView
             android:id="@+id/iv_target"
-            android:layout_marginTop="50dp"
-            android:layout_centerHorizontal="true"
-            android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/ic_launcher" />
 
         <Button
-            android:onClick="restY"
-            android:text="重置"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="restY"
+            android:text="重置" />
     </RelativeLayout>
 </LinearLayout>

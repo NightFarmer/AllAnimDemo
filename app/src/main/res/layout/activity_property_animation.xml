@@ -15,28 +15,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="click1"
-        android:text="TranslateAnimation" />
+        android:text="translationX" />
 
     <Button
         android:id="@+id/bt_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="click2"
-        android:text="ScaleAnimation" />
+        android:text="scaleY" />
 
     <Button
         android:id="@+id/bt_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="click3"
-        android:text="RotationAnimation" />
+        android:text="rotationX" />
 
     <Button
         android:id="@+id/bt_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="click4"
-        android:text="AlphaAnimation" />
+        android:text="alpha" />
 
     <Button
         android:id="@+id/bt_5"
